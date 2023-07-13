@@ -1,0 +1,1 @@
+An assortment of small projects that I used to familiarise myself with the Python langauge.
