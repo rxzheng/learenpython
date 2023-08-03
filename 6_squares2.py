@@ -3,7 +3,7 @@ from turtle import *
 penup()
 pensize(10)
 color("green")
-goto(-365, 300)
+goto(-300, 260)
 pendown()
 setheading(180)
 
@@ -16,5 +16,6 @@ square()
 
 penup()
 color("red")
-goto(265, 200)
+goto(260, -300)
+pendown()
 square()
