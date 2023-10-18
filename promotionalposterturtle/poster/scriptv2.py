@@ -6,15 +6,15 @@ hexl = ['#3a3924', '#42462f', '#3c4025', '#3e402a', '#2c2d1b', '#646255', '#514d
 #hexl = list(input().split())
 # Set up the Turtle screen
 screen = turtle.Screen()
-screen.setup(400, 400)
+screen.setup(900, 1200)
 
 # Create a Turtle object
 t = turtle.Turtle()
 t.speed(0)  # Set the drawing speed (0 is the fastest)
-
+turtle.tracer(0, 0)
 
 # Set the initial position for drawing
-x, y = -700, 500
+x, y = -800, 500
 
 # Set the size of each square
 square_size = 5
@@ -31,12 +31,12 @@ for hex_code in hexl:
     t.end_fill()  # End filling
 
     # Move to the next position
-    if x < 980:
+    if x < 900:
         x += square_size
     else:
-        x = -700
+        x = -800
         y = y - 5
-
+turtle.update
 
 
 # Close the Turtle window on click
