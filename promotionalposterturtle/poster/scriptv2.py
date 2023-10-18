@@ -3,7 +3,7 @@ import _tkinter as tk
 import sys
 sys.stdin = open("hexcodes.txt", "r")
 hexl = []
-hexl = list(input().split())
+#hexl = list(input().split())
 # Set up the Turtle screen
 screen = turtle.Screen()
 screen.setup(400, 400)
@@ -30,7 +30,13 @@ for hex_code in hexl:
     t.end_fill()  # End filling
 
     # Move to the next position
-    x += square_size
+    if x < 980:
+        x += square_size
+    else:
+        x = -100
+        y =- 1
+
+
 
 # Close the Turtle window on click
 screen.exitonclick()
